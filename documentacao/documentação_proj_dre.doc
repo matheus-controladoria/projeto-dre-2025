@@ -1,0 +1,15 @@
+#"Tipo Alterado15" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_jan", each [#"jan-25"] * -1000, type number),
+#"Tipo Alterado34"  = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_fev", each [#"fev-25"] * -1000, type number),
+  #"Tipo Alterado5" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_mar", each [#"mar-25"] * -1000, type number),
+  #"Tipo Alterado6" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_abr", each [#"abr-25"] * -1000, type number),
+  #"Tipo Alterado7" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_mai", each [#"mai-25"] * -1000, type number),
+  #"Tipo Alterado8" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_jun", each [#"jun-25"] * -1000, type number),
+  #"Tipo Alterado9" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_jul", each [#"jul-25"] * -1000, type number),
+  #"Tipo Alterado10" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_ago", each [#"ago-25"] * -1000, type number),
+  #"Tipo Alterado11" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_set", each [#"set-25"] * -1000, type number),
+  #"Tipo Alterado12" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_out", each [#"out-25"] * -1000, type number),
+  #"Tipo Alterado13" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_nov", each [#"nov-25"] * -1000, type number),
+  #"Tipo Alterado14" = Table.AddColumn(#"Tipo Alterado3", "orcamento_2025_dez", each [#"dez-25"] * -1000, type number)
+
+  
+= Table.TransformColumnTypes(#"Cabeçalhos Promovidos2",{{"Área", type text}, {"Cod. Filial", Int64.Type}, {"Filial", type text}, {"Cod. Centro de Custo", Int64.Type}, {"Centro de Custo", type text}, {"Cod. Conta Contábil Winthor", Int64.Type}, {"Conta Contábil Winthor", type text}, {"Cod. Conta Contábil Consinco", Int64.Type}, {"Conta Contábil Consinco", type text}, {"Fornecedor", type text}, {"Descrição", type text}, {"Racional", type text}, {"jan-25", Int64.Type}, {"fev-25", Int64.Type}, {"mar-25", Int64.Type}, {"abr-25", Int64.Type}, {"mai-25", Int64.Type}, {"jun-25", Int64.Type}, {"jul-25", Int64.Type}, {"ago-25", Int64.Type}, {"set-25", Int64.Type}, {"out-25", Int64.Type}, {"nov-25", Int64.Type}, {"dez-25", Int64.Type}, {"2025", type number}, {"Chave", Int64.Type}, {"De para", type text}, {"Dono do Pacote", type text}, {"Column29", type text}})
